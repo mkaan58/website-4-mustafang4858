@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Canvas Designs - Freelance Graphic Design Portfolio</title>
+    <meta name="description" content="Showcasing professional graphic design services for small businesses and startups: logo design, website creation, and social media graphics.">
+    
+    <!-- Performance optimized CDN loading -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Critical CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    
+    <!-- Advanced CDNs -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        if (typeof emailjs !== 'undefined') {
+            emailjs.init("PFATyVVqB6dfozezc");
+        }
+    </script>
+    
+    <!-- SCIENTIFICALLY CALCULATED COLOR SYSTEM AND CRITICAL STYLES -->
+    <style>
+        :root {
+            /* Primary Color System */
+            --color-primary: #145245;
+            --color-secondary: #144152; /* Harmonious analog color */
+            --color-accent: #521420; /* Complementary highlight color */
+            
+            /* Background System */
+            --color-bg: #ffffff;
+            --color-card-bg: #f9fafb;
+            
+            /* Text System */
+            --color-text-primary: #111827; /* Contrast: 17.7:1 */
+            --color-text-secondary: #2f436e;
+            --color-text-muted: #5070b3;
+            
+            /* Border System */
+            --color-border: #e5e7eb;
+            --color-border-hover: #d1d5db;
+            
+            /* Interactive States */
+            --color-primary-hover: #0a2922;
+            --color-secondary-hover: #0a2029;
+            
+            /* Status Colors */
+            --color-success: #10b981;
+            --color-warning: #f59e0b;
+            --color-error: #ef4444;
+            --color-info: #3b82f6;
+            
+            /* Design System */
+            --border-radius: 2px;
+            --font-heading: 'Manrope', sans-serif;
+            --font-body: 'Libre Baskerville', serif;
+            
+            /* Used for rgba calculation in styles */
+            --color-primary-rgb: 20, 82, 69;
+        }
+
+        /* 🎯 GUARANTEED VISIBILITY BASE STYLES */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--color-bg) !important;
+            color: var(--color-text-primary) !important;
+            font-family: var(--font-body) !important;
+            line-height: 1.6 !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            overflow-x: hidden !important; /* Critical for Typed.js */
+        }
+
+        /* 🔴 CRITICAL: BUTTON SYSTEM (ZERO TOLERANCE FOR INVISIBLE BUTTONS) */
+        .btn-primary {
+            background-color: var(--color-primary) !important;
+            color: var(--color-bg) !important;
+            border: 2px solid var(--color-primary) !important;
+            font-weight: 600 !important;
+            padding: 12px 24px !important;
+            border-radius: var(--border-radius) !important;
+            transition: all 0.2s ease !important;
+            text-decoration: none !important;
+            display: inline-block !important;
+            cursor: pointer !important;
+            font-size: 16px !important;
+            min-height: 44px !important;
+            min-width: 44px !important;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-primary-hover) !important;
+            border-color: var(--color-primary-hover) !important;
+            color: var(--color-bg) !important;
+            transform: translateY(-2px) !important;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+        }
+
+        .btn-secondary {
+            background-color: transparent !important;
+            color: var(--color-primary) !important;
+            border: 2px solid var(--color-primary) !important;
+            font-weight: 600 !important;
+            padding: 12px 24px !important;
+            border-radius: var(--border-radius) !important;
+            transition: all 0.2s ease !important;
+            text-decoration: none !important;
+            display: inline-block !important;
+            cursor: pointer !important;
+            font-size: 16px !important;
+            min-height: 44px !important;
+            min-width: 44px !important;
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--color-primary) !important;
+            color: var(--color-bg) !important;
+            border-color: var(--color-primary) !important;
+        }
+
+        /* 🔴 CRITICAL: NAVIGATION SYSTEM */
+        .navbar {
+            background-color: var(--color-bg) !important;
+            border-bottom: 1px solid var(--color-border) !important;
+            backdrop-filter: blur(10px) !important;
+            padding: 16px 0 !important;
+            position: sticky !important;
+            top: 0 !important;
+            z-index: 1000 !important;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease !important;
+        }
+        .navbar.scrolled {
+            background-color: var(--color-bg) !important;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+        }
+
+        .navbar-brand {
+            color: var(--color-text-primary) !important;
+            font-weight: 700 !important;
+            font-family: var(--font-heading) !important;
+            font-size: 24px !important;
+            text-decoration: none !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: var(--color-text-secondary) !important;
+            font-weight: 500 !important;
+            padding: 8px 16px !important;
+            border-radius: calc(var(--border-radius) / 2) !important;
+            transition: all 0.2s ease !important;
+            text-decoration: none !important;
+            display: block !important;
+            position: relative;
+        }
+
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--color-primary);
+            transition: width 0.3s ease-out;
+        }
+
+        .navbar-nav .nav-link:hover::after,
+        .navbar-nav .nav-link.active::after {
+            width: 100%;
+        }
+
+
+        .navbar-nav .nav-link:hover {
+            color: var(--color-primary) !important;
+            background-color: var(--color-card-bg) !important;
+        }
+
+        .navbar-toggler {
+            border: 2px solid var(--color-border) !important;
+            color: var(--color-text-primary) !important;
+            background: transparent !important;
+            padding: 8px 12px !important;
+        }
+
+        /* 🔴 CRITICAL: FORM SYSTEM */
+        .form-control {
+            background-color: var(--color-bg) !important;
+            border: 2px solid var(--color-border) !important;
+            color: var(--color-text-primary) !important;
+            border-radius: var(--border-radius) !important;
+            padding: 12px 16px !important;
+            font-size: 16px !important;
+            width: 100% !important;
+            transition: all 0.2s ease !important;
+        }
+
+        .form-control:focus {
+            border-color: var(--color-primary) !important;
+            box-shadow: 0 0 0 3px rgba(75, 94, 170, 0.1) !important;
+            outline: none !important;
+        }
+
+        .form-control::placeholder {
+            color: var(--color-text-muted) !important;
+            opacity: 1 !important;
+        }
+
+        .form-label {
+            color: var(--color-text-primary) !important;
+            font-weight: 600 !important;
+            margin-bottom: 8px !important;
+            display: block !important;
+        }
+
+        /* 🔴 CRITICAL: CARD SYSTEM */
+        .card {
+            background-color: var(--color-card-bg) !important;
+            border: 1px solid var(--color-border) !important;
+            color: var(--color-text-primary) !important;
+            border-radius: var(--border-radius) !important;
+            transition: all 0.3s ease !important;
+            overflow: hidden !important;
+        }
+
+        .card:hover {
+            border-color: var(--color-border-hover) !important;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1) !important;
+            transform: translateY(-4px) !important;
+        }
+
+        .card-title {
+            color: var(--color-text-primary) !important;
+            font-family: var(--font-heading) !important;
+            font-weight: 700 !important;
+            margin-bottom: 12px !important;
+        }
+
+        .card-text {
+            color: var(--color-text-secondary) !important;
+            line-height: 1.6 !important;
+        }
+
+        /* 🔴 CRITICAL: ICON SYSTEM */
+        .icon {
+            color: var(--color-primary) !important;
+            transition: color 0.2s ease !important;
+        }
+
+        .icon:hover {
+            color: var(--color-primary-hover) !important;
+        }
+
+        /* 🔴 CRITICAL: LINK SYSTEM */
+        a {
+            color: var(--color-primary) !important;
+            text-decoration: none !important;
+            transition: all 0.2s ease !important;
+        }
+
+        a:hover {
+            color: var(--color-primary-hover) !important;
+            text-decoration: underline !important;
+            text-underline-offset: 2px !important;
+        }
+
+        /* 🔴 CRITICAL: HEADING HIERARCHY */
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--color-text-primary) !important;
+            font-family: var(--font-heading) !important;
+            font-weight: 700 !important;
+            line-height: 1.2 !important;
+            margin-bottom: 16px !important;
+        }
+
+        h1 { font-size: 3rem !important; }
+        h2 { font-size: 2.5rem !important; }
+        h3 { font-size: 2rem !important; }
+        h4 { font-size: 1.5rem !important; }
+        h5 { font-size: 1.25rem !important; }
+        h6 { font-size: 1rem !important; }
+
+        /* 🔴 CRITICAL: RESPONSIVE TEXT SCALING */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem !important; }
+            h2 { font-size: 1.75rem !important; }
+            h3 { font-size: 1.5rem !important; }
+            h4 { font-size: 1.25rem !important; }
+            p { font-size: 1rem !important; }
+        }
+
+        /* 🔴 CRITICAL: UTILITY CLASSES */
+        .text-primary { color: var(--color-text-primary) !important; }
+        .text-secondary { color: var(--color-text-secondary) !important; }
+        .text-muted { color: var(--color-text-muted) !important; }
+        .bg-primary { background-color: var(--color-primary) !important; }
+        .bg-card { background-color: var(--color-card-bg) !important; }
+        .border-primary { border-color: var(--color-primary) !important; }
+
+        /* 🔴 CRITICAL: FOCUS STATES FOR ACCESSIBILITY */
+        button:focus,
+        input:focus,
+        textarea:focus,
+        select:focus,
+        a:focus {
+            outline: 2px solid var(--color-primary) !important;
+            outline-offset: 2px !important;
+        }
+
+        /* 🔴 CRITICAL: HOVER STATES FOR INTERACTIVE ELEMENTS */
+        button,
+        .btn,
+        [role="button"] {
+            cursor: pointer !important;
+            transition: all 0.2s ease !important;
+        }
+
+        button:hover,
+        .btn:hover,
+        [role="button"]:hover {
+            transform: translateY(-1px) !important;
+        }
+
+        /* 🔴 CRITICAL: UNIFORM CARD HEIGHT SYSTEM */
+        .card-container {
+            display: flex !important;
+            align-items: stretch !important;
+        }
+        .card {
+            height: 100% !important;
+            display: flex !important;
+            flex-direction: column !important;
+        }
+        .card-body {
+            flex: 1 !important;
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: space-between !important;
+        }
+        /* Grid containers for equal heights */
+        .portfolio-grid, .services-grid, .testimonials-grid {
+            display: grid !important;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+            gap: 24px !important;
+            align-items: stretch !important;
+        }
+        @media (max-width: 768px) {
+            .portfolio-grid, .services-grid, .testimonials-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        /* 🔴 CRITICAL: MOBILE NAVIGATION FIX */
+        .mobile-menu {
+            position: fixed !important;
+            top: 64px !important;
+            right: 0 !important;
+            height: calc(100vh - 64px) !important;
+            width: 280px !important;
+            background-color: var(--color-bg) !important;
+            border-left: 1px solid var(--color-border) !important;
+            transform: translateX(100%) !important;
+            transition: transform 0.3s ease !important;
+            z-index: 999 !important;
+            overflow-y: auto !important;
+            box-shadow: -5px 0 15px rgba(0,0,0,0.05);
+        }
+        .mobile-menu.active {
+            transform: translateX(0) !important;
+        }
+        .hamburger {
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: space-around !important;
+            width: 24px !important;
+            height: 24px !important;
+            background: transparent !important;
+            border: none !important;
+            cursor: pointer !important;
+            padding: 0 !important;
+        }
+        .hamburger span {
+            display: block !important;
+            width: 100% !important;
+            height: 2px !important;
+            background-color: var(--color-text-primary) !important;
+            transition: all 0.3s ease !important;
+            transform-origin: center !important;
+        }
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px) !important;
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0 !important;
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px) !important;
+        }
+
+        /* 🔴 CRITICAL: MOBILE TOUCH TARGETS */
+        @media (max-width: 768px) {
+            .btn-primary,
+            .btn-secondary {
+                min-height: 48px !important;
+                min-width: 48px !important;
+                padding: 16px 24px !important;
+                font-size: 16px !important;
+            }
+            .nav-link {
+                padding: 16px 20px !important;
+                font-size: 16px !important;
+                display: block !important;
+                border-bottom: 1px solid var(--color-border) !important;
+            }
+            .card {
+                margin-bottom: 20px !important;
+            }
+        }
+
+        /* 🔴 CRITICAL: MOBILE FORM FIXES */
+        @media (max-width: 768px) {
+            .form-control {
+                font-size: 16px !important;
+                padding: 16px !important;
+                min-height: 48px !important;
+            }
+            textarea.form-control {
+                min-height: 120px !important;
+            }
+        }
+        /* SWIPER STYLING (USE COLOR VARIABLES - MOBILE OPTIMIZED) */
+        .swiper {
+            padding: 20px 0 60px 0 !important;
+            overflow: visible !important;
+        }
+        .swiper-pagination {
+            bottom: 10px !important;
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+        }
+        .swiper-pagination-bullet {
+            background-color: var(--color-text-muted) !important;
+            opacity: 0.5 !important;
+            width: 10px !important;
+            height: 10px !important;
+            margin: 0 4px !important;
+            transition: all 0.3s ease !important;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: var(--color-primary) !important;
+            opacity: 1 !important;
+            transform: scale(1.3) !important;
+        }
+        /* Mobile Navigation Buttons */
+        @media (min-width: 768px) {
+            .swiper-button-next,
+            .swiper-button-prev {
+                color: var(--color-primary) !important;
+                background-color: var(--color-bg) !important;
+                width: 44px !important;
+                height: 44px !important;
+                border-radius: 50% !important;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+                transition: all 0.3s ease !important;
+                border: 2px solid var(--color-border) !important;
+            }
+            .swiper-button-next:hover,
+            .swiper-button-prev:hover {
+                background-color: var(--color-primary) !important;
+                color: var(--color-bg) !important;
+                transform: scale(1.1) !important;
+                border-color: var(--color-primary) !important;
+            }
+            .swiper-button-next:after,
+            .swiper-button-prev:after {
+                font-size: 14px !important;
+                font-weight: bold !important;
+            }
+        }
+        /* Hide navigation buttons on mobile */
+        @media (max-width: 767px) {
+            .swiper-button-next,
+            .swiper-button-prev {
+                display: none !important;
+            }
+            .swiper-pagination {
+                bottom: 20px !important;
+            }
+        }
+
+        /* TYPED.JS STYLING (USE COLOR VARIABLES) */
+        .typed-element {
+            color: var(--color-primary) !important;
+            font-weight: 700 !important;
+            position: relative !important;
+            white-space: nowrap;
+        }
+        .typed-cursor {
+            color: var(--color-primary) !important;
+            font-weight: 300 !important;
+            animation: blink 1s infinite !important;
+        }
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+        /* CRITICAL TYPED.JS LAYOUT SAFETY */
+        .typed-container {
+            min-width: 150px !important; /* Adjusted for responsive text, ensures minimum width */
+            overflow: hidden !important;
+            white-space: nowrap !important;
+            display: inline-block !important;
+            vertical-align: top;
+        }
+        body, .container {
+            overflow-x: hidden !important;
+            max-width: 100vw !important;
+        }
+        /* PARTICLES STYLING (RESPONSIVE & ACCESSIBLE - MOBILE OPTIMIZED) */
+        .particles-container {
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            z-index: -1 !important;
+            pointer-events: none !important;
+        }
+        #particles-js {
+            position: absolute !important;
+            width: 100% !important;
+            height: 100% !important;
+            background-color: transparent !important;
+        }
+        /* CRITICAL: Mobile optimization - disable particles */
+        @media (max-width: 768px) {
+            .particles-container {
+                display: none !important;
+            }
+        }
+        /* CRITICAL: Reduced motion accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            .particles-container {
+                display: none !important;
+            }
+        }
+        /* CRITICAL: Performance optimization for low-end devices */
+        @media (max-width: 1024px) and (max-height: 768px) {
+            .particles-container {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body x-data="{ mobileMenuOpen: false, showBackToTop: false }" x-init="
+    window.addEventListener('scroll', () => {
+        showBackToTop = window.scrollY > 300;
+        const navbar = document.querySelector('.navbar');
+        if (navbar) {
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        }
+    });
+">
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#home" class="navbar-brand">Creative Canvas Designs</a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8 navbar-nav">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button @click="mobileMenuOpen = !mobileMenuOpen" class="hamburger" :class="{ 'active': mobileMenuOpen }" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu md:hidden" :class="{ 'active': mobileMenuOpen }">
+            <div class="px-4 py-2">
+                <a href="#home" @click="mobileMenuOpen = false" class="nav-link block">Home</a>
+                <a href="#portfolio" @click="mobileMenuOpen = false" class="nav-link block">Portfolio</a>
+                <a href="#services" @click="mobileMenuOpen = false" class="nav-link block">Services</a>
+                <a href="#about" @click="mobileMenuOpen = false" class="nav-link block">About</a>
+                <a href="#testimonials" @click="mobileMenuOpen = false" class="nav-link block">Testimonials</a>
+                <a href="#contact" @click="mobileMenuOpen = false" class="nav-link block">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden" style="background-color: var(--color-bg);">
+        <div id="particles-js" class="particles-container"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4" style="color: var(--color-text-primary); font-family: var(--font-heading);">
+                    Creative Canvas Designs: Turning Ideas into Visuals That Pop.
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto" style="color: var(--color-text-secondary); font-family: var(--font-body);">
+                    Pro-level design without the fuss for small businesses and startups looking to <span id="typed-subtitle" class="typed-element typed-container"></span>
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#portfolio" class="btn-primary" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-eye mr-2"></i>
+                        View Portfolio
+                    </a>
+                    <a href="#contact" class="btn-secondary" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-comment-dots mr-2"></i>
+                        Get a Quote
+                    </a>
+                </div>
+            </div>
+            <!-- Dynamic visual element for hero section -->
+            <div class="absolute bottom-0 left-0 w-full h-1/2 md:h-1/3" data-aos="zoom-in" data-aos-delay="400">
+                <img src="https://images.unsplash.com/photo-1614036634955-ae5e90f9b9eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NjE0MzF8MHwxfHNlYXJjaHwxfHx2aXN1YWwlMjBpZGVudGl0eSUyMGRlc2lnbnxlbnwwfHx8fDE3NDk2NDU0ODN8MA&ixlib=rb-4.1.0&q=80&w=1080&w=1200&h=600&fit=crop&crop=center" 
+                    alt="Creative Canvas Designs showcasing diverse visual identity designs" 
+                    class="w-full h-full object-cover object-bottom opacity-20"
+                    loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20" style="background-color: var(--color-card-bg);">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">About Creative Canvas Designs</h2>
+                <p class="text-xl max-w-3xl mx-auto" style="color: var(--color-text-secondary);">Passionate about turning ideas into visuals that pop for small businesses and startups.</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1560087459-7665dcbd23c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NjE0MzF8MHwxfHNlYXJjaHw0fHxncmFwaGljJTIwZGVzaWduZXIlMjB3b3Jrc3BhY2V8ZW58MHx8fHwxNzQ5NjQ1NDgzfDA&ixlib=rb-4.1.0&q=80&w=1080&w=500&h=500&fit=crop&crop=center" 
+                         alt="Creative Canvas Designs designer working in a professional workspace" class="rounded-lg shadow-lg w-full max-w-md mx-auto hover-lift" loading="lazy"
+                         style="border-radius: var(--border-radius);">
+                </div>
+                
+                <div data-aos="fade-left">
+                    <h3 class="text-2xl font-bold mb-6">Your Partner for Pro-Level Design Without The Fuss</h3>
+                    <p class="mb-6 leading-relaxed" style="color: var(--color-text-secondary);">
+                        At Creative Canvas Designs, I'm dedicated to helping small businesses and startups stand out in a crowded market. My mission is to simplify the design process, delivering professional, approachable visuals that genuinely tell your story and resonate with your audience. I believe great design shouldn't be complicated.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="text-center card">
+                            <div class="text-2xl font-bold" style="color: var(--color-primary);">100+</div>
+                            <div class="text-sm" style="color: var(--color-text-muted);">Happy Clients</div>
+                        </div>
+                        <div class="text-center card">
+                            <div class="text-2xl font-bold" style="color: var(--color-primary);">7+</div>
+                            <div class="text-sm" style="color: var(--color-text-muted);">Years Experience</div>
+                        </div>
+                    </div>
+                    
+                    <h4 class="text-lg font-semibold mb-3">My Expertise:</h4>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-3 py-1 rounded-full text-sm" style="background: rgba(var(--color-primary-rgb), 0.1); color: var(--color-primary); border: 1px solid var(--color-border);">Logo Design</span>
+                        <span class="px-3 py-1 rounded-full text-sm" style="background: rgba(var(--color-primary-rgb), 0.1); color: var(--color-primary); border: 1px solid var(--color-border);">Website Creation</span>
+                        <span class="px-3 py-1 rounded-full text-sm" style="background: rgba(var(--color-primary-rgb), 0.1); color: var(--color-primary); border: 1px solid var(--color-border);">Social Media Graphics</span>
+                        <span class="px-3 py-1 rounded-full text-sm" style="background: rgba(var(--color-primary-rgb), 0.1); color: var(--color-primary); border: 1px solid var(--color-border);">Brand Strategy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section with Swiper -->
+    <section id="portfolio" class="py-20" style="background-color: var(--color-bg);">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">My Portfolio</h2>
+                <p class="text-xl max-w-3xl mx-auto" style="color: var(--color-text-secondary);">A showcase of my recent work that turns ideas into visuals that pop.</p>
+            </div>
+            
+            <div class="swiper portfolio-swiper" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card hover-lift card-body" style="border-radius: var(--border-radius);">
+                            <img src="https://images.unsplash.com/photo-1576558345433-58e777a5e423?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NjE0MzF8MHwxfHNlYXJjaHw5fHxsb2dvJTIwZGVzaWduJTIwbW9ja3VwfGVufDB8fHx8MTc0OTY0NTQ4M3ww&ixlib=rb-4.1.0&q=80&w=1080&w=600&h=400&fit=crop&crop=center" 
+                                 alt="Modern logo design for a tech startup" class="w-full h-48 object-cover mb-4" style="border-radius: var(--border-radius);" loading="lazy">
+                            <h3 class="card-title text-xl font-bold mb-2">Aether Corp Logo</h3>
+                            <p class="card-text">Crafted a unique and memorable logo for a cutting-edge tech startup.</p>
+                            <a href="#" class="text-sm font-semibold mt-auto" style="color: var(--color-primary);">View Case Study <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card hover-lift card-body" style="border-radius: var(--border-radius);">
+                            <img src="https://images.unsplash.com/photo-1586418328152-c61f282202c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NjE0MzF8MHwxfHNlYXJjaHwzfHx3ZWJzaXRlJTIwZGVzaWduJTIwc2NyZWVufGVufDB8fHx8MTc0OTY0NTQ4NHww&ixlib=rb-4.1.0&q=80&w=1080&w=600&h=400&fit=crop&crop=center" 
+                                 alt="Responsive website design for a local cafe" class="w-full h-48 object-cover mb-4" style="border-radius: var(--border-radius);" loading="lazy">
+                            <h3 class="card-title text-xl font-bold mb-2">Urban Brew Website</h3>
+                            <p class="card-text">Designed and developed a vibrant, mobile-first website for a bustling coffee shop.</p>
+                            <a href="#" class="text-sm font-semibold mt-auto" style="color: var(--color-primary);">View Case Study <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card hover-lift card-body" style="border-radius: var(--border-radius);">
+                            <img src="https://images.unsplash.com/photo-1611605698323-b1e99cfd37ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NjE0MzF8MHwxfHNlYXJjaHwxMXx8c29jaWFsJTIwbWVkaWElMjBncmFwaGljc3xlbnwwfHx8fDE3NDk2NDU0ODN8MA&ixlib=rb-4.1.0&q=80&w=1080&w=600&h=400&fit=crop&crop=center" 
+                                 alt="Engaging social media graphics for a fashion brand" class="w-full h-48 object-cover mb-4" style="border-radius: var(--border-radius);" loading="lazy">
+                            <h3 class="card-title text-xl font-bold mb-2">Chic Boutique Socials</h3>
+                            <p class="card-text">Created a series of captivating social media graphics to boost online presence and engagement.</p>
+                            <a href="#" class="text-sm font-semibold mt-auto" style="color: var(--color-primary);">View Case Study <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card hover-lift card-body" style="border-radius: var(--border-radius);">
+                            <img src="https://images.unsplash.com/photo-1532102235608-dc8fc689c9ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NjE0MzF8MHwxfHNlYXJjaHwxMHx8c3RhcnR1cCUyMHZpc3VhbCUyMGlkZW50aXR5fGVufDB8fHx8MTc0OTY0NTQ4M3ww&ixlib=rb-4.1.0&q=80&w=1080&w=600&h=400&fit=crop&crop=center" 
+                                 alt="Visual identity for a new coaching business" class="w-full h-48 object-cover mb-4" style="border-radius: var(--border-radius);" loading="lazy">
+                            <h3 class="card-title text-xl font-bold mb-2">Apex Coaching Brand</h3>
+                            <p class="card-text">Developed a full visual identity system, including logo, color palette, and typography, for a new coaching service.</p>
+                            <a href="#" class="text-sm font-semibold mt-auto" style="color: var(--color-primary);">View Case Study <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- Duplicating for more slides to ensure Swiper works well -->
+                    <div class="swiper-slide">
+                        <div class="card hover-lift card-body" style="border-radius: var(--border-radius);">
+                            <img src="https://images.unsplash.com/photo-1576558345433-58e777a5e423?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NjE0MzF8MHwxfHNlYXJjaHw5fHxsb2dvJTIwZGVzaWduJTIwbW9ja3VwfGVufDB8fHx8MTc0OTY0NTQ4M3ww&ixlib=rb-4.1.0&q=80&w=1080&w=600&h=400&fit=crop&crop=center" 
+                                 alt="Modern logo design for a tech startup - 2" class="w-full h-48 object-cover mb-4" style="border-radius: var(--border-radius);" loading="lazy">
+                            <h3 class="card-title text-xl font-bold mb-2">Innovate Solutions Logo</h3>
+                            <p class="card-text">A sleek, minimalist logo designed to represent innovation and forward-thinking in the tech sector.</p>
+                            <a href="#" class="text-sm font-semibold mt-auto" style="color: var(--color-primary);">View Case Study <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card hover-lift card-body" style="border-radius: var(--border-radius);">
+                            <img src="https://images.unsplash.com/photo-1586418328152-c61f282202c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NjE0MzF8MHwxfHNlYXJjaHwzfHx3ZWJzaXRlJTIwZGVzaWduJTIwc2NyZWVufGVufDB8fHx8MTc0OTY0NTQ4NHww&ixlib=rb-4.1.0&q=80&w=1080&w=600&h=400&fit=crop&crop=center" 
+                                 alt="Responsive website design for a local cafe - 2" class="w-full h-48 object-cover mb-4" style="border-radius: var(--border-radius);" loading="lazy">
+                            <h3 class="card-title text-xl font-bold mb-2">Green Eats Online</h3>
+                            <p class="card-text">Developed an easy-to-navigate website for a healthy food delivery service, focusing on user experience.</p>
+                            <a href="#" class="text-sm font-semibold mt-auto" style="color: var(--color-primary);">View Case Study <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20" style="background-color: var(--color-card-bg);">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">My Services</h2>
+                <p class="text-xl max-w-3xl mx-auto" style="color: var(--color-text-secondary);">Pro-level design solutions without the fuss for your business.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="card hover-lift text-center card-body p-6" data-aos="fade-up" data-aos-delay="100" style="border-radius: var(--border-radius);">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-lg flex items-center justify-center" style="background: rgba(var(--color-primary-rgb), 0.1); border-radius: var(--border-radius);">
+                        <i class="fas fa-lightbulb text-2xl icon"></i>
+                    </div>
+                    <h3 class="card-title text-xl font-bold mb-4">Logo Design & Branding</h3>
+                    <p class="card-text">Crafting unique, memorable logos and comprehensive brand identities that truly represent your business and resonate with your audience.</p>
+                </div>
+                
+                <div class="card hover-lift text-center card-body p-6" data-aos="fade-up" data-aos-delay="200" style="border-radius: var(--border-radius);">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-lg flex items-center justify-center" style="background: rgba(var(--color-primary-rgb), 0.1); border-radius: var(--border-radius);">
+                        <i class="fas fa-laptop-code text-2xl icon"></i>
+                    </div>
+                    <h3 class="card-title text-xl font-bold mb-4">Website Creation</h3>
+                    <p class="card-text">Building engaging, functional, and user-friendly websites that not only look stunning but also drive results for your small business or startup.</p>
+                </div>
+                
+                <div class="card hover-lift text-center card-body p-6" data-aos="fade-up" data-aos-delay="300" style="border-radius: var(--border-radius);">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-lg flex items-center justify-center" style="background: rgba(var(--color-primary-rgb), 0.1); border-radius: var(--border-radius);">
+                        <i class="fas fa-share-alt text-2xl icon"></i>
+                    </div>
+                    <h3 class="card-title text-xl font-bold mb-4">Social Media Graphics</h3>
+                    <p class="card-text">Designing captivating visuals for all your social media platforms, ensuring your brand stands out and grabs attention in the digital crowd.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20" style="background-color: var(--color-bg);">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">What Clients Say</h2>
+                <p class="text-xl max-w-3xl mx-auto" style="color: var(--color-text-secondary);">Hear directly from businesses I've helped stand out.</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="card p-6 card-body" data-aos="fade-up" data-aos-delay="100" style="border-radius: var(--border-radius);">
+                    <p class="mb-4 italic" style="color: var(--color-text-primary);">"Creative Canvas Designs transformed our vision into a stunning brand identity. The process was smooth, professional, and the results exceeded our expectations!"</p>
+                    <div class="flex items-center mt-auto">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client Avatar" class="w-12 h-12 rounded-full mr-4" loading="lazy">
+                        <div>
+                            <p class="font-semibold" style="color: var(--color-text-primary);">John Doe</p>
+                            <p class="text-sm" style="color: var(--color-text-muted);">Founder, TechSolutions Inc.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-6 card-body" data-aos="fade-up" data-aos-delay="200" style="border-radius: var(--border-radius);">
+                    <p class="mb-4 italic" style="color: var(--color-text-primary);">"I needed a website that was professional yet approachable, and Creative Canvas Designs delivered exactly that. They truly understood our brand's essence."</p>
+                    <div class="flex items-center mt-auto">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client Avatar" class="w-12 h-12 rounded-full mr-4" loading="lazy">
+                        <div>
+                            <p class="font-semibold" style="color: var(--color-text-primary);">Jane Smith</p>
+                            <p class="text-sm" style="color: var(--color-text-muted);">Owner, Little Bites Bakery</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-6 card-body" data-aos="fade-up" data-aos-delay="300" style="border-radius: var(--border-radius);">
+                    <p class="mb-4 italic" style="color: var(--color-text-primary);">"The social media graphics are fantastic! Our engagement has soared since we started using their designs. Pro-level results without any fuss indeed!"</p>
+                    <div class="flex items-center mt-auto">
+                        <img src="https://randomuser.me/api/portraits/men/50.jpg" alt="Client Avatar" class="w-12 h-12 rounded-full mr-4" loading="lazy">
+                        <div>
+                            <p class="font-semibold" style="color: var(--color-text-primary);">Mike Johnson</p>
+                            <p class="text-sm" style="color: var(--color-text-muted);">Marketing Manager, FreshGrocer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20" style="background-color: var(--color-card-bg);">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+                <p class="text-xl max-w-3xl mx-auto" style="color: var(--color-text-secondary);">Let's discuss your next project and turn your ideas into visuals that pop!</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div data-aos="fade-right">
+                    <h3 class="text-2xl font-bold mb-8">Let's Connect</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-lg flex items-center justify-center mr-4" style="background: rgba(var(--color-primary-rgb), 0.1); border-radius: var(--border-radius);">
+                                <i class="fas fa-envelope icon text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold" style="color: var(--color-text-primary);">Email</h4>
+                                <p style="color: var(--color-text-secondary);">info@creativecanvasdesigns.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-lg flex items-center justify-center mr-4" style="background: rgba(var(--color-primary-rgb), 0.1); border-radius: var(--border-radius);">
+                                <i class="fas fa-phone icon text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold" style="color: var(--color-text-primary);">Phone</h4>
+                                <p style="color: var(--color-text-secondary);">+1 (555) 987-6543</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-lg flex items-center justify-center mr-4" style="background: rgba(var(--color-primary-rgb), 0.1); border-radius: var(--border-radius);">
+                                <i class="fas fa-map-marker-alt icon text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold" style="color: var(--color-text-primary);">Location</h4>
+                                <p style="color: var(--color-text-secondary);">San Francisco, CA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4 mt-8">
+                        <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center transition-all" style="background: var(--color-border); color: var(--color-text-muted);" onmouseover="this.style.backgroundColor='var(--color-primary)'; this.style.color='var(--color-bg)'" onmouseout="this.style.backgroundColor='var(--color-border)'; this.style.color='var(--color-text-muted)'">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center transition-all" style="background: var(--color-border); color: var(--color-text-muted);" onmouseover="this.style.backgroundColor='var(--color-primary)'; this.style.color='var(--color-bg)'" onmouseout="this.style.backgroundColor='var(--color-border)'; this.style.color='var(--color-text-muted)'">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center transition-all" style="background: var(--color-border); color: var(--color-text-muted);" onmouseover="this.style.backgroundColor='var(--color-primary)'; this.style.color='var(--color-bg)'" onmouseout="this.style.backgroundColor='var(--color-border)'; this.style.color='var(--color-text-muted)'">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center transition-all" style="background: var(--color-border); color: var(--color-text-muted);" onmouseover="this.style.backgroundColor='var(--color-primary)'; this.style.color='var(--color-bg)'" onmouseout="this.style.backgroundColor='var(--color-border)'; this.style.color='var(--color-text-muted)'">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div data-aos="fade-left">
+                    <div class="card p-6" style="border-radius: var(--border-radius);">
+                        <h3 class="text-xl font-bold mb-6">Send Message</h3>
+                        
+                        <form id="emailjs-form" class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="field">
+                                    <label for="name" class="form-label">
+                                        <i class="fas fa-user mr-2"></i>Name
+                                    </label>
+                                    <input type="text" name="name" id="name" required class="form-control" placeholder="Your Name">
+                                </div>
+                                <div class="field">
+                                    <label for="email" class="form-label">
+                                        <i class="fas fa-envelope mr-2"></i>Email
+                                    </label>
+                                    <input type="email" name="email" id="email" required class="form-control" placeholder="your@email.com">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="subject" class="form-label">
+                                    <i class="fas fa-tag mr-2"></i>Subject
+                                    </label>
+                                <input type="text" name="subject" id="subject" required class="form-control" placeholder="Project Inquiry">
+                            </div>
+                            <div class="field">
+                                <label for="message" class="form-label">
+                                    <i class="fas fa-comment mr-2"></i>Message
+                                </label>
+                                <textarea name="message" id="message" required rows="5" class="form-control" placeholder="Tell me about your project..."></textarea>
+                            </div>
+                            
+                            <div class="field hidden">
+                                <input type="hidden" name="to_email" id="to_email" value="mustafang4858@gmail.com">
+                            </div>
+                            
+                            <button type="submit" id="contact-btn" class="btn-primary w-full">
+                                <i class="fas fa-paper-plane mr-2"></i>
+                                Send Message
+                            </button>
+                            
+                            <div id="success-message" class="hidden text-center py-3 rounded-lg" style="color: var(--color-success); background: rgba(16, 185, 129, 0.1);">
+                                <i class="fas fa-check-circle mr-2"></i>
+                                Message sent successfully! I'll get back to you soon.
+                            </div>
+                            <div id="error-message" class="hidden text-center py-3 rounded-lg" style="color: var(--color-error); background: rgba(239, 68, 68, 0.1);">
+                                <i class="fas fa-exclamation-circle mr-2"></i>
+                                <span id="error-text">Failed to send message. Please try again.</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<footer class="py-12" style="background-color: var(--color-bg); border-top: 1px solid var(--color-border);">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+       <div class="grid md:grid-cols-4 gap-8">
+           <div class="md:col-span-2">
+               <div class="text-2xl font-bold mb-4" style="font-family: var(--font-heading); color: var(--color-primary);">Creative Canvas Designs</div>
+               <p class="mb-6 max-w-md" style="color: var(--color-text-secondary);">
+                   Turning ideas into visuals that pop. Pro-level design without the fuss for small businesses and startups.
+               </p>
+               <div class="flex space-x-4">
+                   <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center transition-all" style="background: var(--color-card-bg); color: var(--color-text-muted);" onmouseover="this.style.backgroundColor='var(--color-primary)'; this.style.color='var(--color-bg)'" onmouseout="this.style.backgroundColor='var(--color-card-bg)'; this.style.color='var(--color-text-muted)'">
+                       <i class="fab fa-linkedin-in"></i>
+                   </a>
+                   <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center transition-all" style="background: var(--color-card-bg); color: var(--color-text-muted);" onmouseover="this.style.backgroundColor='var(--color-primary)'; this.style.color='var(--color-bg)'" onmouseout="this.style.backgroundColor='var(--color-card-bg)'; this.style.color='var(--color-text-muted)'">
+                       <i class="fab fa-dribbble"></i>
+                   </a>
+                   <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center transition-all" style="background: var(--color-card-bg); color: var(--color-text-muted);" onmouseover="this.style.backgroundColor='var(--color-primary)'; this.style.color='var(--color-bg)'" onmouseout="this.style.backgroundColor='var(--color-card-bg)'; this.style.color='var(--color-text-muted)'">
+                       <i class="fab fa-behance"></i>
+                   </a>
+                   <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center transition-all" style="background: var(--color-border); color: var(--color-text-muted);" onmouseover="this.style.backgroundColor='var(--color-primary)'; this.style.color='var(--color-bg)'" onmouseout="this.style.backgroundColor='var(--color-border)'; this.style.color='var(--color-text-muted)'">
+                       <i class="fab fa-instagram"></i>
+                   </a>
+               </div>
+           </div>
+           
+           <div>
+               <h3 class="font-semibold mb-4 text-primary">Quick Links</h3>
+               <ul class="space-y-2">
+                   <li><a href="#home" class="transition-colors text-secondary hover:text-primary">Home</a></li>
+                   <li><a href="#portfolio" class="transition-colors text-secondary hover:text-primary">Portfolio</a></li>
+                   <li><a href="#services" class="transition-colors text-secondary hover:text-primary">Services</a></li>
+                   <li><a href="#about" class="transition-colors text-secondary hover:text-primary">About</a></li>
+                   <li><a href="#testimonials" class="transition-colors text-secondary hover:text-primary">Testimonials</a></li>
+                   <li><a href="#contact" class="transition-colors text-secondary hover:text-primary">Contact</a></li>
+               </ul>
+           </div>
+           
+           <div>
+               <h3 class="font-semibold mb-4 text-primary">Services</h3>
+               <ul class="space-y-2">
+                   <li class="text-secondary">Logo Design</li>
+                   <li class="text-secondary">Website Creation</li>
+                   <li class="text-secondary">Social Media Graphics</li>
+                   <li class="text-secondary">Brand Strategy</li>
+                   <li class="text-secondary">Consulting</li>
+               </ul>
+           </div>
+       </div>
+       
+       <div class="mt-12 pt-8 text-center" style="border-top: 1px solid var(--color-border); color: var(--color-text-muted);">
+           <p>&copy; 2023 Creative Canvas Designs. All rights reserved. Built with ❤️ and modern technologies.</p>
+       </div>
+   </div>
+</footer>
+
+<!-- Back to Top Button -->
+<button 
+   x-show="showBackToTop" 
+   @click="window.scrollTo({top: 0, behavior: 'smooth'})"
+   x-transition:enter="transition ease-out duration-300"
+   x-transition:enter-start="opacity-0 transform scale-90"
+   x-transition:enter-end="opacity-100 transform scale-100"
+   x-transition:leave="transition ease-in duration-300"
+   x-transition:leave-start="opacity-100 transform scale-100"
+   x-transition:leave-end="opacity-0 transform scale-90"
+   class="fixed bottom-8 right-8 p-3 rounded-full shadow-lg transition-all z-40"
+   style="background: var(--color-primary); color: white;"
+   onmouseover="this.style.transform='scale(1.1)'"
+   onmouseout="this.style.transform='scale(1)'">
+   <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- JavaScript CDNs (EXACT ORDER) -->
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<!-- Only load particles on desktop -->
+<script>
+   if (window.innerWidth > 768 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+       const script = document.createElement('script');
+       script.src = 'https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js';
+       document.body.appendChild(script);
+   }
+</script>
+
+<!-- Initialize everything -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize AOS
+        AOS.init({
+            duration: 600,
+            easing: 'ease-out',
+            once: true,
+            offset: 50,
+            disable: function() {
+                return window.innerWidth < 768 || window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            }
+        });
+        
+        // Initialize Typed.js for Hero Subtitle
+        const typedSubtitleElement = document.getElementById('typed-subtitle');
+        if (typedSubtitleElement) {
+            new Typed('#typed-subtitle', {
+                strings: [
+                    'stand out.',
+                    'tell their story.', 
+                    'make an impact.', 
+                    'pop!'
+                ],
+                typeSpeed: 80,
+                backSpeed: 50,
+                backDelay: 2000,
+                startDelay: 500,
+                loop: true,
+                showCursor: true,
+                cursorChar: '|',
+                autoInsertCss: true,
+            });
+        }
+        
+        // Initialize Portfolio Swiper
+        const portfolioSwiper = new Swiper('.portfolio-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 15,
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            },
+            effect: 'slide',
+            speed: 600,
+            touchRatio: 1,
+            threshold: 5,
+            allowTouchMove: true,
+            preventInteractionOnTransition: false,
+            watchOverflow: true,
+            centerInsufficientSlides: true,
+        });
+        
+        // Initialize Particles.js (only on desktop and if not prefers-reduced-motion)
+        if (typeof particlesJS !== 'undefined' && window.innerWidth > 768 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            particlesJS('particles-js', {
+                particles: {
+                    number: { value: 50, density: { enable: true, value_area: 800 } },
+                    color: { value: 'var(--color-primary)' },
+                    shape: { type: 'circle' },
+                    opacity: { value: 0.3, random: true, anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false } },
+                    size: { value: 3, random: true, anim: { enable: true, speed: 2, size_min: 0.1, sync: false } },
+                    line_linked: { enable: true, distance: 150, color: 'var(--color-primary)', opacity: 0.2, width: 1 },
+                    move: { enable: true, speed: 1, direction: 'none', random: false, straight: false, out_mode: 'out', bounce: false }
+                },
+                interactivity: {
+                    detect_on: 'canvas',
+                    events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' }, resize: true },
+                    modes: { repulse: { distance: 100, duration: 0.4 }, push: { particles_nb: 4 } }
+                },
+                retina_detect: true
+            });
+        }
+        
+        // EmailJS Contact Form (CRITICAL: EXACT CODE FROM BASE TEMPLATE)
+        const form = document.getElementById('emailjs-form');
+        const btn = document.getElementById('contact-btn');
+        const successMsg = document.getElementById('success-message');
+        const errorMsg = document.getElementById('error-message');
+        const errorText = document.getElementById('error-text');
+        
+        if (form && btn) {
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                
+                btn.disabled = true;
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Sending...';
+                
+                successMsg.classList.add('hidden');
+                errorMsg.classList.add('hidden');
+                
+                const serviceID = 'service_d1ikm0r';
+                const templateID = 'template_y6yjh3h';
+                
+                emailjs.sendForm(serviceID, templateID, form)
+                    .then(function(response) {
+                        successMsg.classList.remove('hidden');
+                        form.reset();
+                        btn.disabled = false;
+                        btn.innerHTML = '<i class="fas fa-paper-plane mr-2"></i>Send Message';
+                        setTimeout(() => successMsg.classList.add('hidden'), 5000);
+                    }, function(error) {
+                        let errorMessage = 'Failed to send message. Please try again.';
+                        if (error.status === 422) errorMessage = 'Invalid template or service configuration.';
+                        else if (error.status === 412) errorMessage = 'Email service authentication error.';
+                        else if (error.status === 400) errorMessage = 'Invalid request. Please check your inputs.';
+                        
+                        errorText.textContent = errorMessage;
+                        errorMsg.classList.remove('hidden');
+                        btn.disabled = false;
+                        btn.innerHTML = '<i class="fas fa-paper-plane mr-2"></i>Send Message';
+                    });
+            });
+        }
+        
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const target = document.querySelector(targetId);
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - (window.innerWidth > 768 ? 80 : 64),
+                        behavior: 'smooth'
+                    });
+                    if (window.Alpine && window.Alpine.data('body').mobileMenuOpen) { // Check if Alpine.data exists and menu is open
+                        window.Alpine.data('body').mobileMenuOpen = false;
+                    }
+                }
+            });
+        });
+        
+        // Update active navigation link on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        const updateActiveNav = () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= (sectionTop - sectionHeight / 3)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        };
+        window.addEventListener('scroll', updateActiveNav);
+        updateActiveNav();
+
+        // Mobile menu close on outside click
+        document.addEventListener('click', function(event) {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const hamburger = document.querySelector('.hamburger');
+            const navbar = document.querySelector('nav');
+            
+            if (mobileMenu && hamburger && navbar && !navbar.contains(event.target) && !hamburger.contains(event.target) && mobileMenu.classList.contains('active')) {
+                if (window.Alpine) {
+                    Alpine.data('body', () => ({ mobileMenuOpen: false }));
+                }
+            }
+        });
+        
+        // Prevent zoom on input focus (iOS fix for fixed viewport)
+        document.querySelectorAll('input, textarea, select').forEach(element => {
+            element.addEventListener('touchstart', function() {
+                if (element.style.fontSize !== '16px') {
+                    element.style.fontSize = '16px';
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
